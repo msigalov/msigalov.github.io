@@ -109,23 +109,24 @@
             z-index: 9999999
         }
 
+        canvas{
+          display:block;
+          vertical-align:bottom;
+        }
 
+        header .particles-js-canvas-el{
+            z-index: -9999;
+        }
 
-    canvas{
-      display:block;
-      vertical-align:bottom;
-    }
-
-
-    #particles-js{
-      width: 100%;
-      height: 100%;
-      /*background-color: #b61924;*/
-      /*background-image: url('');*/
-      /*background-size: cover;*/
-      /*background-position: 50% 50%;*/
-      /*background-repeat: no-repeat;*/
-    }
+        #particles-js{
+          width: 100%;
+          height: 100%;
+          background-color: #4674a5;
+          /*background-image: url('');*/
+          /*background-size: cover;*/
+          /*background-position: 50% 50%;*/
+          /*background-repeat: no-repeat;*/
+        }
 
     </style>
 
@@ -179,11 +180,12 @@
         </div>
         
     </nav>
-    <header id="particles-js" style=background-image:url(assets/img/msigalov/bg-header.jpg)>
+    <header id="particles-js" style=background-image:url(assets/img/msigalov/plane.png)
+        <image src="path/to/image" style="width: 100%; height: 100%">
         <div class=intro-content>
             <div class=brand-name>Mikhail Sigalov</div>
             <hr class=colored>
-            <div class=brand-name-subtext>Engineering Student and Photographer</div>
+            <div class=brand-name-subtext>Engineering Student</div>
         </div>
         <div class=scroll-down>
             <a href=#about class="page-scroll btn"><i class="fa fa-fw fa-angle-down"></i></a>
@@ -198,8 +200,8 @@
                 <div class="col-md-6 text-center">
                     <h1>Hi, I'm Mikhail</h1>
                     <hr class=colored>
-                    <p>I am a freshman at Columbia University majoring in Mechanical Engineering. Mechanical design is my passion, and I am particularly interested in aerospace and robotics. </p>
-                    <p>I have had experience as a product designer, working in Solidworks and Creo Parametric to design mechanical subsystems for a diverse range of applications. I am an alumnus of the FIRST Robotics Competition program, where I was a technical design captain and business leader.</p>
+                    <p>I am a freshman at Columbia University planning on majoring in mechanical engineering. Design is my passion, and I am particularly interested in aerospace and robotics. </p>
+                    <p>I have experience as a product designer, working in Solidworks and Creo Parametric to design mechanical subsystems for a diverse range of applications. I am an alumnus of the FIRST Robotics Competition program, where I was a technical design captain and business leader.</p>
                 </div>
             </div>
         </div>
@@ -221,25 +223,26 @@
                         <p>I create 3D models of parts in Solidworks or Creo Parametric, the majority of my experience lies in sheetmetal design and assembly modelling.</p>
                     </div>
                 </div>
+                
                 <div class="fadeIn wow col-md-3 col-sm-6"data-wow-delay=.4s>
                     <div class=about-content>
-                        <i class="fa fa-4x fa-camera-retro"></i>
-                        <h3>Photography</h3>
-                        <p>I'm an amateur photographer. I enjoy searching for symmetry in the real world, capturing both city stills and people in action.</p>
+                        <i class="fa fa-4x fa-paint-brush"></i>
+                        <h3>Rendering</h3>
+                        <p>I make high quality, realistic, renders and animations of 3D assemnly models to help my clients visualize their final product. </p>
                     </div>
                 </div>
                 <div class="fadeIn wow col-md-3 col-sm-6"data-wow-delay=.6s>
                     <div class=about-content>
-                        <i class="fa fa-4x fa-paint-brush"></i>
-                        <h3>Rendering</h3>
-                        <p>I make high quality, realistic renders and animations of 3D computer models to help my clients visualize their final product. </p>
+                        <i class="fa fa-4x fa-camera-retro"></i>
+                        <h3>Photography</h3>
+                        <p>I'm an amateur photographer. I enjoy searching for symmetry in the real world, capturing city stills, and shooting people in action.</p>
                     </div>
                 </div>
                 <div class="fadeIn wow col-md-3 col-sm-6"data-wow-delay=.8s>
                     <div class=about-content>
                         <i class="fa fa-4x fa-desktop"></i>
                         <h3>Electronics Repair</h3>
-                        <p>I build computers and have repaired desktops, laptops, and phones. I also have experience wiring and soldering. </p>
+                        <p>I build computers and have repaired desktops, laptops, and phones. I also have experience wiring and soldering electrical systems. </p>
                     </div>
                 </div>
             </div>
@@ -250,7 +253,7 @@
             <div class=row>
                 <div class="fadeIn wow col-md-10 col-md-offset-1">
                     <span class=quote>Good
-                        <span class=text-primary>design</span> is finding that perfect balance between the way something
+                    <span class=text-primary>design</span> is finding that perfect balance between the way something
                     <span class=text-primary>looks</span> and how it
                     <span class=text-primary>functions</span>.</span>
                     <hr class=colored>
@@ -271,7 +274,7 @@
                                 <span class="filter active"data-filter="design photo">All</span>
                             </li>
                             <li>
-                                <span class=filter data-filter=design>Product Design</span>
+                                <span class=filter data-filter=design>Mechanical Design</span>
                             </li>
                             <li>
                                 <span class=filter data-filter=photo>Photography</span>
