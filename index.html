@@ -116,11 +116,13 @@
 
         header .particles-js-canvas-el{
             z-index: -9999;
+            background-color: #4674a5
         }
 
         #particles-js{
           width: 100%;
           height: 100%;
+          background-color: #4674a5;
           /*background-color: #4674a5;*/
           /*background-image: url('');*/
           /*background-size: cover;*/
@@ -180,8 +182,8 @@
         </div>
         
     </nav>
-    <header id="particles-js" style=background-color:#4674a5>
-        <image src="assets/img/msigalov/plane.png" >
+    <header id="particles-js" style="position: relative">
+        <div style="width: 100%; height: 100%; background-image: url(assets/img/msigalov/plane.png); position: absolute" ></div>
         <div class=intro-content>
             <div class=brand-name>Mikhail Sigalov</div>
             <hr class=colored>
